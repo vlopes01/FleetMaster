@@ -11,7 +11,7 @@ namespace FleetMaster.Entities
         [Key, ForeignKey("DefaultVehicle")]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [DataMember]
-        public Guid Id { get; set; }
+        public new Guid Id { get; set; }
 
         [DataMember]
         public byte[] Image { get; set; }
